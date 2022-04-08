@@ -82,16 +82,7 @@ body{
     margin-left: 120px;
 }
 
-.principal .boton{
-    font-family: 'Noto';
-    font-size: 18px;
-    font-weight: 600;
-    background: none;
-    color: white;
-    padding: 10px 20px;
-    border: solid 2px white;
-    border-radius: 15px;
-    cursor: pointer;
+.principal .btn{
     margin-top: 60px;
     margin-left: 280px;
 }
