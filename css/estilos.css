@@ -77,9 +77,6 @@ body{
     padding-right: 10px;
 }
 
-footer{
-    margin-top: 100px;
-}
 
 footer p{
     font-size: 18px;
@@ -118,9 +115,30 @@ footer a{
     margin-bottom: 50px;
 }
 
+.metodologia{
+    margin-bottom: 150px;
+}
+
+
+
 .servicios .fa-check{
     padding-right: 10px!important;
 }
+
+.epigrafe{
+    font-size: 10px;
+}
+
+.btn-formulario{
+    background-color:rgb(3, 78, 107);
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 150px;
+    margin-bottom: 80px;
+    border-radius: 20px;
+}
+
 
 @media screen and (min-width:1200px){
 
@@ -134,13 +152,10 @@ footer a{
     footer .redes{
         justify-content: space-between!important;
     }
-    .migadepan{
-        margin-top: 150px;
-        letter-spacing: 3px;
-        font-size: 12px;
+    .servicios{
         margin-bottom: 150px;
     }
-
+    
 
 
 }
