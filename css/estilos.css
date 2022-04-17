@@ -13,6 +13,10 @@ body{
     font-family: 'Noto';
 }
 
+.navbar{
+    background-color: rgb(3, 78, 107);
+}
+
 
 
 .principal{
@@ -23,6 +27,7 @@ body{
     height: 60vh;
     text-align: center;
     padding-top: 150px;
+    border-radius: 0px 0px 0px 60px;
 }
 
 .principal h1{
@@ -32,7 +37,6 @@ body{
     margin: 0px 15px 15px 0px;
     color: white;
 }
-
 
 .principal h6{
     font-size: 14px;
@@ -49,7 +53,14 @@ body{
 }
 
 .conceptos h6{
-    font-size: 21px;
+    font-size: 18px;
+}
+
+.conceptos .fa{
+    font-size: 40px;
+}
+.conceptos .far{
+    font-size: 40px;
 }
 
 .card-title{
@@ -59,6 +70,11 @@ body{
 
 .card .icon{
     font-size: 25px;
+}
+
+
+.reseñas .card{
+    border-radius: 0px 15px 0px 15px!important;
 }
 
 .principal .btn{
@@ -72,11 +88,23 @@ body{
     border: solid 2px rgb(3, 78, 107);
 }
 
+.reseñas {
+    border-radius: 0px 60px 0px 0px;
+}
+
+
+.Links-fondo{
+    border-radius: 60px 0px 0px 0px;
+}
+
 .icon-contacto{
     margin-top:10px!important;
     padding-right: 10px;
 }
 
+footer{
+    border-radius: 0px 60px 0px 0px;
+}
 
 footer p{
     font-size: 18px;
@@ -87,14 +115,18 @@ footer a{
     color: white;
 }
 
+footer .contacto .espaciado{
+    padding-left: 25px;
+}
+
 #scrollUp{
     position: fixed;
     right: 80px;
     font-size: 20px;
-    line-height: 40px;
-    width: 40px;
-    height: 40px;
-    bottom: 40px;
+    line-height: 50px;
+    width: 50px;
+    height: 50px;
+    bottom: 50px;
     background-color: rgb(3, 78, 107);
     color:white;
     -webkit-transition-duration: 500ms;
@@ -125,8 +157,36 @@ footer a{
     padding-right: 10px!important;
 }
 
+.metodologia .fa-check{
+    padding-right: 10px!important;
+}
+
+
+
 .epigrafe{
     font-size: 10px;
+}
+
+form label {
+    color: rgb(3, 78, 107);
+    display: block;
+    font-size: 13px;
+    margin-top: 3px;
+    padding: 5px 3px;
+}
+form input {
+    height:40px;
+    width: 80%;
+    padding:5px 8px;
+	display: block;
+    justify-content: center;
+}
+form textarea {
+    padding:8px;
+    width:80%;
+	display: block;
+    height: 150px;
+    justify-content: center;
 }
 
 .btn-formulario{
@@ -135,13 +195,31 @@ footer a{
     border: none;
     padding: 10px;
     width: 150px;
+    margin-top: 30px;
     margin-bottom: 80px;
     border-radius: 20px;
+}
+.contacto .btn-formulario:hover{
+    background-color: rgb(3, 46, 63)!important;
+}
+
+
+
+
+@media screen and (min-width:900px){
+
+    .principal{
+        border-radius: 0px 0px 0px 150px;
+    }
+    .reseñas .card{
+        border-radius: 0px 35px 0px 35px!important;
+}
 }
 
 
 @media screen and (min-width:1200px){
-
+    
+    
     .principal h1{
         font-size:65px;
         margin-bottom: 5px;
@@ -152,8 +230,20 @@ footer a{
     footer .redes{
         justify-content: space-between!important;
     }
+    footer{
+        border-radius: 0px 150px 0px 0px;
+    }
+    footer .fav{
+        width: 130px!important;
+    }
     .servicios{
         margin-bottom: 150px;
+    }
+    .reseñas{
+        border-radius: 0px 150px 0px 0px;
+    }
+    .Links-fondo{
+        border-radius: 150px 0px 0px 0px;
     }
     
 

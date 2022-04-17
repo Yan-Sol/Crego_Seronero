@@ -15,9 +15,9 @@
 
 <body class="text-secondary"> 
         <header>
-                <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+                <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-gradient">
                         <div class="container">
-                        <a class="navbar-brand" href="../index.html"><img class="logo" src="../imagenes/CREGO_marca_gris.png" alt="logo" width="200px"></a>
+                        <a class="navbar-brand" href="../index.html"><img class="logo" src="../imagenes/CREGO marca.png" alt="logo" width="200px"></a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                         </button>
@@ -34,88 +34,81 @@
                 </nav>               
         </header>
 
-<div class="contacto bg-light">
-        <div class="container">
-                <div class="row">
-                        <div>
-                        <h6 CLASS="migadepan">ORGANIZACIÓN CREGO > CONTACTO</h6>
+        <div class="contacto bg-light">
+                <div class="container">
+                        <div class="row">
+                                <div class="col-12 col-lg-6">
+                                <h6 CLASS="migadepan">ORGANIZACIÓN CREGO > CONTACTO</h6>
+                                </div>
                         </div>
-                </div>
-                <div class="row">
-                        <div class="col-xl-2"></div>
-                        <div class="col-xl-6">
-                                <form action="procesar.php" method="post">
-                                        
-                                        <legend>Dejanos tu consulta</legend>
-                                        <br>
-                                        <p>
-                                                <label for="nombre">Nombre:</label><br>
-                                                <input type="text" name="nombre" placeholder="Nombre">
-                                        </p>
-                                        <br>
-                                        <p>
-                                                <label for="email">Email:</label><br>
-                                                <input type="email" name="Email" placeholder="Email" required>
-                                        </p>
-                                        
-                                        <br><br>
-                                        
-                                        <!--text area-->
-                                        
-                                        <textarea name="comentario" id="" cols="60" rows="10" placeholder="Mensaje" ></textarea>
-                                        <br><br>
-                                        <!--Boton-->
-                                        <p><input class="btn-formulario" type="submit" value="ENVIAR"></p>
-                                </form>
+                        <div class="row">
+                                <div class="col-xl-3"></div>
+                                <div class="col-xl-6">
+                                        <h4>Dejanos tu consulta</h4>
+                                        <div class="form contact-form">
+                                                <form action="contacto.php" method="post" id="formulario-contacto" >
+                                                        <label for="name"></label>
+                                                        <input name="nombre"  type="text" placeholder="Nombre y Apellido" class="tabla" required="nombre"/ >
+                                                
+                                                        <label for="email"></label>
+                                                        <input  name="email" placeholder="E-mail" class="tabla" required type="email"/>
+                                                
+                                                        <label for="mensaje"></label>
+                                                        <textarea name="mensaje" id="mensaje" placeholder="Mensaje:"></textarea>
+
+                                                        <button class="btn-formulario" type="submit">ENVIAR</button>
+                                                </form>
+                                        </div>
+                                </div>
                         </div>
                 </div>
         </div>
-</div>
 
-<div class="mapa"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12874.045057490852!2d-61.1116486!3d-36.2270725!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1a2fabb0364cd4d6!2sOrganizacion%20CREGO%20-%20Servicios%20Administrativos!5e0!3m2!1ses!2sar!4v1647295013403!5m2!1ses!2sar" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
-
+        <div class="mapa"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12874.045057490852!2d-61.1116486!3d-36.2270725!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1a2fabb0364cd4d6!2sOrganizacion%20CREGO%20-%20Servicios%20Administrativos!5e0!3m2!1ses!2sar!4v1647295013403!5m2!1ses!2sar" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
 
 
 
 
-<footer id="footer" class="bg-primary bg-gradient text-white">
-        <div class="container">
-                <div class="row m-5">
-                        <div class="col-12 col-xl-3 d-flex align-items-center text-center">
-                                <img src="../imagenes/CREGO marca.png" class="pt-4" alt="logo" width="250px">
-                        </div>
-                        <div class="col-12 col-xl-3 pt-3">
-                                <p>
-                                        <i class="fa fa-mobile icon-contacto py-3 fa-md" aria-hidden="true"></i>+54 2314 625104<br>+54 2314 530165<br>
-                                        <i class="fa fa-envelope-o icon-contacto py-3 fa-md" aria-hidden="true"></i><a href="mailto:organizacioncrego@gmail.com">organizacioncrego@gmail.com</a>
-                                        <br>
-                                        <i class="fa-regular fa-clock icon-contacto py-3 fa-md"></i>
-                                        Lun. a Vier. de 9 a 18 hs.<br>
-                                        <i class="far fa-building icon-contacto py-3 fa-md"></i>
-                                        Av. Almte Brown 348 | San Carlos de Bolivar
-                                </p>
-                        </div>
-                        <div class="col-12 col-xl-3"></div>
 
-                        <div class="col-12 col-xl-3 d-inline-flex justify-content-evenly pt-5 redes">
-                                <a href="https://www.facebook.com/organizacioncrego/" target="_blank"><i class="fa-brands fa-facebook-f fa-xl"></i></a>
-                                <a href=""><i class="fa-brands fa-instagram fa-xl"></i></a> 
-                                <a href=""><i class="fa-brands fa-whatsapp fa-xl"></i></a>
-                                <a id="scrollUp" href="#top" class="top text-center" aria-hidden="true"><i class="fas fa-arrow-circle-up"></i></a> 
-                        </div>
-                </div>
-        </div>
-        <div>
-                <div class="row">
-                        <div class="col-12 text-center py-4 bg-dark bg-gradient">
-                                <p>Todos los Derechos Reservados | 2022</p>
+        <footer id="footer" class="bg-primary bg-gradient text-white">
+                <div class="container">
+                        <div class="row p-5">
+                                <div class="col-12 col-xl-3 d-flex align-items-center text-center">
+                                        <img src="../imagenes/Cg_favicon_blanco.png" class="pt-4 fav" alt="logo" width="100px">
+                                </div>
+                                <div class="col-12 col-xl-3 pt-3 contacto">
+                                        <p>
+                                                <i class="fa fa-mobile icon-contacto py-3 fa-md" aria-hidden="true"></i>+54 2314 625104
+                                                <br><span class="espaciado">+54 2314 530165</span><br>
+                                                <i class="fa fa-envelope-o icon-contacto py-3 fa-md" aria-hidden="true"></i><a href="mailto:organizacioncrego@gmail.com">organizacioncrego@gmail.com</a>
+                                                <br>
+                                                <i class="fa-regular fa-clock icon-contacto py-3 fa-md"></i>
+                                                Lun. a Vier. de 9 a 18 hs.<br>
+                                                <i class="far fa-building icon-contacto py-3 fa-md"></i>
+                                                Av. Almte Brown 348<br>
+                                                <span class="espaciado">San Carlos de Bolivar</span>
+                                        </p>
+                                </div>
+                                <div class="col-12 col-xl-3"></div>
+
+                                <div class="col-12 col-xl-3 d-inline-flex justify-content-evenly pt-5 redes">
+                                        <a href="https://www.facebook.com/organizacioncrego/" target="_blank"><i class="fa-brands fa-facebook-f fa-xl"></i></a>
+                                        <a href=""><i class="fa-brands fa-instagram fa-xl"></i></a> 
+                                        <a href=""><i class="fa-brands fa-whatsapp fa-xl"></i></a>
+                                        <a id="scrollUp" href="#top" class="top text-center" aria-hidden="true"><i class="fas fa-arrow-circle-up"></i></a> 
+                                </div>
                         </div>
                 </div>
-        </div>        
-        
-</footer>
+                <div>
+                        <div class="row">
+                                <div class="col-12 text-center py-4 bg-dark bg-gradient">
+                                        <p>Todos los Derechos Reservados | 2022</p>
+                                </div>
+                        </div>
+                </div>        
+                
+        </footer>
 
         <script src="../libs/bootstrap/js/bootstrap.min.js"></script>
 </body>
-
 </html>

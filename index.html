@@ -7,6 +7,7 @@
         <link  rel="icon"  href="imagenes/Crego__favicon.png" type="image/png">
         <title>Organización Crego</title>
         <link rel="stylesheet" href="css/estilos.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <!--BOOTSTRAP-->
         <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
         <!--Fontawesome-->
@@ -16,9 +17,9 @@
 
 <body class="text-secondary">
         <header>
-                <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+                <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-gradient">
                         <div class="container">
-                        <a class="navbar-brand" href="#"><img class="logo" src="./imagenes/CREGO_marca_gris.png" alt="logo" width="200px"></a>
+                        <a class="navbar-brand" href="../index.html"><img class="logo" src="imagenes/CREGO marca.png" alt="logo" width="200px"></a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                         </button>
@@ -35,13 +36,14 @@
                 </nav>               
         </header>
         <main class="principal">
-                <h1>Resolvemos tus trámites</h1>
+                <div data-aos="zoom-in" data-aos-duration="1500"><h1>Resolvemos tus trámites</h1></div>
                 <h6>Municipales | Provinciales | Nacionales</h6>
-                <a href="#footer"><button type="button" class="btn btn-primary btn-lg">Contactanos</button></a>
+                <a href="#footer"><button type="button" class="btn btn-primary btn-lg" data-aos="fade-up"
+                        data-aos-anchor-placement="center-bottom" data-aos-duration="1500">Contactanos</button></a>
                 
                 
         </main>
-        <section class="conceptos container mb-5">
+        <section class="conceptos container my-5">
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
                         <div class="text-center pt-5">
                                 <i class="fa fa-cogs fa-xl" aria-hidden="true"></i>
@@ -69,35 +71,32 @@
 
 
 
-        <section class="mb-5 bg-light">
-                <h3 class="text-center Subtitulo pt-5">Reseñas</h3>
+        <section class="p-5 bg-light reseñas">
+                <h3 class="text-center Subtitulo">Reseñas</h3>
                 <article class="container">
                         <div class="row">
                                 <div class="col-12 col-md-6 col-lg-4">
-                                        <div class="card shadow p-3 mb-5 bg-body rounded">
+                                        <div class="card shadow p-3 mb-5 bg-body rounded" data-aos="flip-left" data-aos-duration="600">
                                                 <div class="card-body">
                                                 <i class="fa fa-comment-o pb-3 icon" aria-hidden="true"></i>
-                                                
                                                 <h6 class="card-title pt-3">Sebastián Asencio</h6>
                                                 <p class="card-text">"La cordialidad y atenciónes muy buena, siempre predispuestos a asesorar y colaborar en la resolución de los trámites"</p>
                                                 </div>
                                         </div>
                                 </div>
                                 <div class="col-12 col-md-6 col-lg-4">
-                                        <div class="card shadow p-3 mb-5 bg-body rounded">
+                                        <div class="card shadow p-3 mb-5 bg-body rounded" data-aos="flip-left" data-aos-duration="1200">
                                                 <div class="card-body">
                                                 <i class="fa fa-comment-o pb-3 icon" aria-hidden="true"></i>
-                                                
                                                 <h6 class="card-title pt-3">Carlos Espindola</h6>
                                                 <p class="card-text">"Muy buenas referencias, excelentes resultados. Muchos años trabajando con ellos, confianza plena en la resolución del trabajo"</p>
                                                 </div>
                                         </div>
                                 </div>
                                 <div class="col-12 col-md-6 col-lg-4">
-                                        <div class="card shadow p-3 mb-5 bg-body rounded">
+                                        <div class="card shadow p-3 mb-5 bg-body rounded" data-aos="flip-left" data-aos-duration="1800">
                                                 <div class="card-body">
                                                 <i class="fa fa-comment-o pb-3 icon" aria-hidden="true"></i>
-                                                
                                                 <h6 class="card-title pt-3">Lucia Pascual</h6>
                                                 <p class="card-text">"Super recomendable contratar los servicios de Juan Carlos y Carla, ambos comprometidos y atentos"</p>
                                                 </div>
@@ -105,61 +104,64 @@
                                 </div>
                         </div>
                 </article>
-
         </section>
-        <section class="container">
-                <h3 class="text-center Subtitulo">Links de Interés</h3>
-                <article class="container d-flex justify-content-center">
-                        <div class="row" >
-                        <div class="col-6 col-lg-3">
-                                <a href="https://web.arba.gov.ar/" target="blank_"><img src="imagenes/Arba.jpg" alt="Logo Arba"></a>
-                        </div>
-                        <div class="col-6 col-lg-3">
-                                <a href="https://www.dnrpa.gov.ar/" target="blank_"><img src="imagenes/Registro-del-automotor.jpg" alt="Logo Registro del automotor"></a>
-                        </div>
-                        <div class="col-6 col-lg-3">
-                                <a href="https://www.afip.gob.ar/" target="blank_"><img src="imagenes/afip.jpg" alt="Logo afip"></a>
-                        </div>
-                        <div class="col-6 col-lg-3">
-                                <a href="https://www.ips.gba.gob.ar/" target="blank_"><img src="imagenes/Ips.jpg" alt="Logo Insituto Previsión Social Provincia de Buenos Aires"></a>
-                        </div>
-                        <div class="col-6 col-lg-3">
-                                <a href="https://www.anses.gob.ar/" target="blank_"><img src="imagenes/anses.jpg" alt="Logo Anses"></a>
-                        </div>
-                        <div class="col-6 col-lg-3">
-                                <a href="https://www.electoral.gob.ar/nuevo/index.php" target="blank_"><img src="imagenes/CamaraNacionalElectores.jpg" alt="Logo Camara Nacional Electoral"></a>
-                        </div>
-                        <div class="col-6 col-lg-3">
-                                <a href="http://www.abc.gov.ar//" target="blank_"><img src="imagenes/CulturayEducacion.jpg" alt="Logo Ministerio de Cultura y Educación"></a>
-                        </div>
-                        <div class="col-6 col-lg-3">
-                                <a href="https://www.ambiente.gba.gob.ar/" target="blank_"><img src="imagenes/OPDS.jpg" alt="Logo Organismo Provincial para el Desarrollo Sostenible Provincia de Buenos Aires"></a>
-                        </div>
 
-
-                </article>
-        </section>
+        <div class="bg-light">
+                <div class="bg-white Links-fondo">
+                <section class="container p-5">
+                        <h3 class="text-center Subtitulo">Links de Interés</h3>
+                        <article class="container d-flex justify-content-center">
+                                <div class="row" >
+                                <div class="col-6 col-lg-3">
+                                        <a href="https://web.arba.gov.ar/" target="blank_"><img src="imagenes/Arba.jpg" alt="Logo Arba"></a>
+                                </div>
+                                <div class="col-6 col-lg-3">
+                                        <a href="https://www.dnrpa.gov.ar/" target="blank_"><img src="imagenes/Registro-del-automotor.jpg" alt="Logo Registro del automotor"></a>
+                                </div>
+                                <div class="col-6 col-lg-3">
+                                        <a href="https://www.afip.gob.ar/" target="blank_"><img src="imagenes/afip.jpg" alt="Logo afip"></a>
+                                </div>
+                                <div class="col-6 col-lg-3">
+                                        <a href="https://www.ips.gba.gob.ar/" target="blank_"><img src="imagenes/Ips.jpg" alt="Logo Insituto Previsión Social Provincia de Buenos Aires"></a>
+                                </div>
+                                <div class="col-6 col-lg-3">
+                                        <a href="https://www.anses.gob.ar/" target="blank_"><img src="imagenes/anses.jpg" alt="Logo Anses"></a>
+                                </div>
+                                <div class="col-6 col-lg-3">
+                                        <a href="https://www.electoral.gob.ar/nuevo/index.php" target="blank_"><img src="imagenes/CamaraNacionalElectores.jpg" alt="Logo Camara Nacional Electoral"></a>
+                                </div>
+                                <div class="col-6 col-lg-3">
+                                        <a href="http://www.abc.gov.ar//" target="blank_"><img src="imagenes/CulturayEducacion.jpg" alt="Logo Ministerio de Cultura y Educación"></a>
+                                </div>
+                                <div class="col-6 col-lg-3">
+                                        <a href="https://www.ambiente.gba.gob.ar/" target="blank_"><img src="imagenes/OPDS.jpg" alt="Logo Organismo Provincial para el Desarrollo Sostenible Provincia de Buenos Aires"></a>
+                                </div>
+                        </article>
+                </section>
+                </div>
+        </div>
 
 
         <footer id="footer" class="bg-primary bg-gradient text-white">
                 <div class="container">
-                        <div class="row m-5">
+                        <div class="row p-5">
                                 <div class="col-12 col-xl-3 d-flex align-items-center text-center">
-                                        <img src="imagenes/CREGO marca.png" class="pt-4" alt="logo" width="250px">
+                                        <img src="imagenes/Cg_favicon_blanco.png" class="pt-4 fav" alt="logo" width="100px">
                                 </div>
-                                <div class="col-12 col-xl-3 pt-3">
+                                <div class="col-12 col-xl-3 pt-3 contacto">
                                         <p>
-                                                <i class="fa fa-mobile icon-contacto py-3 fa-md" aria-hidden="true"></i>+54 2314 625104<br>+54 2314 530165<br>
+                                                <i class="fa fa-mobile icon-contacto py-3 fa-md" aria-hidden="true"></i>+54 2314 625104
+                                                <br><span class="espaciado">+54 2314 530165</span><br>
                                                 <i class="fa fa-envelope-o icon-contacto py-3 fa-md" aria-hidden="true"></i><a href="mailto:organizacioncrego@gmail.com">organizacioncrego@gmail.com</a>
                                                 <br>
                                                 <i class="fa-regular fa-clock icon-contacto py-3 fa-md"></i>
                                                 Lun. a Vier. de 9 a 18 hs.<br>
                                                 <i class="far fa-building icon-contacto py-3 fa-md"></i>
-                                                Av. Almte Brown 348 | San Carlos de Bolivar
+                                                Av. Almte Brown 348<br>
+                                                <span class="espaciado">San Carlos de Bolivar</span>
                                         </p>
                                 </div>
                                 <div class="col-12 col-xl-3"></div>
-
                                 <div class="col-12 col-xl-3 d-inline-flex justify-content-evenly pt-5 redes">
                                         <a href="https://www.facebook.com/organizacioncrego/" target="_blank"><i class="fa-brands fa-facebook-f fa-xl"></i></a>
                                         <a href=""><i class="fa-brands fa-instagram fa-xl"></i></a> 
@@ -180,5 +182,9 @@
 
 
         <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+                AOS.init();
+        </script>
 </body>
 </html>
