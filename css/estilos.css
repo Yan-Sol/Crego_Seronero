@@ -42,8 +42,8 @@ body {
 }
 
 .Subtitulo {
-  font-size: 30px;
   color: #034e6b;
+  font-size: 30px;
   margin-bottom: 50px;
   margin-top: 80px;
 }
@@ -58,18 +58,20 @@ body {
   font-size: 40px;
 }
 
-.card .title {
+/*---------EXTEND--------*/
+.card .title, .card-2 .title, .card-1 .title {
   font-size: 21px;
   color: #034e6b;
 }
-.card .icon {
+.card .icon, .card-2 .icon, .card-1 .icon {
   font-size: 25px;
 }
 
+/*---------END-EXTEND--------*/
 .reseñas {
   border-radius: 0px 60px 0px 0px;
 }
-.reseñas .card {
+.reseñas .card, .reseñas .card-1, .reseñas .card-2 {
   border-radius: 0px 15px 0px 15px !important;
 }
 
@@ -81,6 +83,10 @@ body {
 .principal .btn:hover {
   background-color: #034e6b !important;
   border: solid 2px #034e6b !important;
+}
+
+.links img {
+  width: 90%;
 }
 
 .Links-fondo {
@@ -122,6 +128,7 @@ footer .contacto .espaciado {
   border-radius: 50%;
 }
 
+/*-------- MAPS  APLICADO--------*/
 .migadepan {
   margin-top: 150px;
   margin-left: 20px;
@@ -130,6 +137,7 @@ footer .contacto .espaciado {
   margin-bottom: 50px;
 }
 
+/*---------------END-MAPS---------------*/
 .metodologia {
   margin-bottom: 150px;
 }
@@ -137,6 +145,9 @@ footer .contacto .espaciado {
   padding-right: 10px !important;
 }
 
+.servicios {
+  padding-bottom: 100px;
+}
 .servicios .fa-check {
   padding-right: 10px !important;
 }
@@ -181,22 +192,19 @@ form textarea {
   background-color: #00303a !important;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1024px) {
   .principal {
     border-radius: 0px 0px 0px 150px;
+    padding-top: 150px;
+    text-align: left;
+    padding-left: 140px;
   }
-
-  .reseñas .card {
-    border-radius: 0px 35px 0px 35px !important;
-  }
-}
-@media screen and (min-width: 1200px) {
   .principal h1 {
-    font-size: 65px;
+    font-size: 50px;
     margin-bottom: 5px;
   }
   .principal h6 {
-    font-size: 25px;
+    font-size: 18px;
   }
 
   footer {
@@ -216,9 +224,23 @@ form textarea {
   .reseñas {
     border-radius: 0px 150px 0px 0px;
   }
+  .reseñas .card, .reseñas .card-1, .reseñas .card-2 {
+    border-radius: 0px 35px 0px 35px !important;
+  }
 
   .Links-fondo {
     border-radius: 150px 0px 0px 0px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .principal {
+    text-align: center;
+  }
+  .principal h1 {
+    font-size: 65px;
+  }
+  .principal h6 {
+    font-size: 25px;
   }
 }
 

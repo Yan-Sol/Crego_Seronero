@@ -12,10 +12,29 @@ $color-fondo:#034e6b;
 $color-titulos:#034e6b;
 
 
+
 // Anidación o Nesting
 
 body{
     font-family: "$Familia-tipografica";
+}
+
+
+// MAPS
+
+$seccion: (
+    'espacio-arriba': 150px,
+    'espacio-izq': 20px,
+    'separacion-letras': 3px,
+    'tfuente': 14px,
+    'margen-boton':50px,
+);
+
+// MIXIN
+
+@mixin subtitulo ($color-titulos, $tamaño-subtitulos){
+    color: $color-titulos;
+    font-size: $tamaño-subtitulos;
 }
 
 
@@ -55,10 +74,8 @@ body{
 }
 }
 
-
 .Subtitulo{
-    font-size: 30px;
-    color:$color-titulos;
+    @include subtitulo ($color-titulos, 30px);
     margin-bottom: 50px;
     margin-top: 80px;
 }
@@ -75,6 +92,7 @@ body{
     }
 }
 
+/*---------EXTEND--------*/
 
 .card{
     .title{
@@ -87,6 +105,15 @@ body{
     }
 }
 
+.card-1{
+    @extend .card;
+}
+
+.card-2{
+    @extend .card;
+}
+
+/*---------END-EXTEND--------*/
 
 .reseñas{
     border-radius: 0px 60px 0px 0px;
@@ -105,7 +132,9 @@ body{
         }
     }
 }
-
+.links img{
+    width: 90%;
+}
 .Links-fondo{
     border-radius: 60px 0px 0px 0px;
 }
@@ -145,14 +174,15 @@ footer{
     border-radius: 50%;
 }
 
-
+/*-------- MAPS  APLICADO--------*/
 .migadepan{
-    margin-top: 150px;
-    margin-left: 20px;
-    letter-spacing: 3px;
-    font-size: 14px;
-    margin-bottom: 50px;
+    margin-top: map-get($map: $seccion, $key: 'espacio-arriba');
+    margin-left: map-get($map: $seccion, $key: 'espacio-izq');
+    letter-spacing: map-get($map:$seccion, $key: 'separacion-letras');
+    font-size: map-get($map: $seccion, $key: 'tfuente');
+    margin-bottom: map-get($map: $seccion, $key: 'margen-boton');
 }
+/*---------------END-MAPS---------------*/
 
 .metodologia{
     margin-bottom: 150px;
@@ -162,6 +192,7 @@ footer{
 }
 
 .servicios{ 
+    padding-bottom: 100px;
     .fa-check{
     padding-right: 10px!important;
 }
@@ -210,24 +241,18 @@ form {
 }
 
 
-@media screen and (min-width:900px){
+@media screen and (min-width:1024px){
     .principal{
         border-radius: 0px 0px 0px 150px;
-    }
-    .reseñas .card{
-        border-radius: 0px 35px 0px 35px!important;
-    }
-}
-
-
-@media screen and (min-width:1200px){
-    .principal{
+        padding-top: 150px;
+        text-align: left;
+        padding-left: 140px;
         h1{
-        font-size:65px;
+        font-size:50px;
         margin-bottom: 5px;
         }
         h6{
-        font-size: 25px;
+        font-size: 18px;
         }
     }
     footer{
@@ -244,9 +269,26 @@ form {
     }
     .reseñas{
         border-radius: 0px 150px 0px 0px;
+        .card{
+            border-radius: 0px 35px 0px 35px!important;
+        }
     }
     .Links-fondo{
         border-radius: 150px 0px 0px 0px;
+    }
+}
+
+
+
+@media screen and (min-width:1400px){
+    .principal{
+        text-align: center;
+        h1{
+        font-size:65px;
+        }
+        h6{
+        font-size: 25px;
+        }
     }
     
 }
