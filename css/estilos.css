@@ -13,6 +13,10 @@ body {
 
 .navbar {
   background-color: #034e6b;
+  height: 75px !important;
+}
+.navbar a {
+  font-size: 18px !important;
 }
 .navbar a:active {
   font-weight: 500 !important;
@@ -51,12 +55,6 @@ body {
 .conceptos h6 {
   font-size: 18px;
 }
-.conceptos .fa {
-  font-size: 40px;
-}
-.conceptos .far {
-  font-size: 40px;
-}
 
 /*---------EXTEND--------*/
 .card .title, .card-2 .title, .card-1 .title {
@@ -85,12 +83,18 @@ body {
   border: solid 2px #034e6b !important;
 }
 
+.conceptos .bi {
+  color: #97adb6;
+  font-size: 35px !important;
+}
+
 .links img {
   width: 90%;
 }
 
 .Links-fondo {
   border-radius: 60px 0px 0px 0px;
+  padding-bottom: 80px;
 }
 
 .icon-contacto {
@@ -192,6 +196,11 @@ form textarea {
   background-color: #00303a !important;
 }
 
+.derechos {
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
 @media screen and (min-width: 1024px) {
   .principal {
     border-radius: 0px 0px 0px 150px;
@@ -205,6 +214,10 @@ form textarea {
   }
   .principal h6 {
     font-size: 18px;
+  }
+
+  .conceptos .bi {
+    font-size: 45px !important;
   }
 
   footer {
@@ -231,6 +244,10 @@ form textarea {
   .Links-fondo {
     border-radius: 150px 0px 0px 0px;
   }
+
+  .derechos {
+    font-size: 12px;
+  }
 }
 @media screen and (min-width: 1400px) {
   .principal {
@@ -241,6 +258,10 @@ form textarea {
   }
   .principal h6 {
     font-size: 25px;
+  }
+
+  .conceptos .bi {
+    font-size: 50px !important;
   }
 }
 
