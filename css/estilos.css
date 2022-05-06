@@ -16,7 +16,10 @@ body {
   height: 75px !important;
 }
 .navbar a {
-  font-size: 18px !important;
+  font-size: 14px !important;
+  margin: 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 .navbar a:active {
   font-weight: 500 !important;
@@ -38,11 +41,14 @@ body {
   padding: 5px;
   margin: 0px 15px 15px 0px;
   color: white;
+  font-style: italic;
+  letter-spacing: 2px;
 }
 .principal h6 {
-  font-size: 14px;
+  font-size: 12px;
   letter-spacing: 3px;
   color: white;
+  text-transform: uppercase;
 }
 
 .Subtitulo {
@@ -50,10 +56,6 @@ body {
   font-size: 30px;
   margin-bottom: 50px;
   margin-top: 80px;
-}
-
-.conceptos h6 {
-  font-size: 18px;
 }
 
 /*---------EXTEND--------*/
@@ -75,8 +77,11 @@ body {
 
 .principal .btn {
   margin-top: 40px;
+  width: 200px;
   background-color: transparent !important;
   border: solid 2px white;
+  border-radius: 30px;
+  letter-spacing: 1px;
 }
 .principal .btn:hover {
   background-color: #034e6b !important;
@@ -84,8 +89,23 @@ body {
 }
 
 .conceptos .bi {
-  color: #97adb6;
+  color: rgb(95, 95, 95);
   font-size: 35px !important;
+}
+.conceptos h6 {
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+.frase {
+  padding: 100px 0px 100px 0px;
+  background-color: #034e6b;
+  margin-top: 100px;
+  color: white;
+}
+.frase .text-frase {
+  font-size: 35px;
+  font-style: italic;
 }
 
 .links img {
@@ -104,6 +124,7 @@ body {
 
 footer {
   border-radius: 0px 60px 0px 0px;
+  background-color: #12698b;
 }
 footer p {
   font-size: 18px;
@@ -143,10 +164,16 @@ footer .contacto .espaciado {
 
 /*---------------END-MAPS---------------*/
 .metodologia {
+  font-size: 18px;
   margin-bottom: 150px;
 }
-.metodologia .fa-check {
-  padding-right: 10px !important;
+.metodologia .bi {
+  font-size: 35px;
+  color: rgb(95, 95, 95);
+  padding-right: 20px;
+}
+.metodologia span {
+  font-weight: 700;
 }
 
 .servicios {
@@ -154,16 +181,15 @@ footer .contacto .espaciado {
 }
 .servicios .fa-check {
   padding-right: 10px !important;
+  color: rgb(95, 95, 95);
 }
 
 .epigrafe {
   font-size: 10px;
 }
 
-form label {
-  color: rgb(3, 78, 107);
-  display: block;
-  font-size: 13px;
+form .text-form {
+  font-size: 15px;
   margin-top: 3px;
   padding: 5px 3px;
 }
@@ -183,24 +209,38 @@ form textarea {
 }
 
 .btn-formulario {
-  background-color: #034e6b;
-  color: white;
-  border: none;
+  border: 1px solid #00303a;
+  background-color: transparent;
   padding: 10px;
   width: 150px;
   margin-top: 30px;
   margin-bottom: 80px;
-  border-radius: 20px;
+  border-radius: 25px;
 }
 .btn-formulario:hover {
   background-color: #00303a !important;
+  color: white;
 }
 
 .derechos {
   font-size: 10px;
   text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
+@media screen and (max-width: 768px) {
+  .navbar-nav {
+    background-color: #034e6b;
+  }
+}
+@media screen and (min-width: 768px) {
+  .metodologia {
+    font-size: 21px;
+  }
+  .metodologia .bi {
+    font-size: 55px;
+  }
+}
 @media screen and (min-width: 1024px) {
   .principal {
     border-radius: 0px 0px 0px 150px;
@@ -213,7 +253,7 @@ form textarea {
     margin-bottom: 5px;
   }
   .principal h6 {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .conceptos .bi {
@@ -248,6 +288,13 @@ form textarea {
   .derechos {
     font-size: 12px;
   }
+
+  .frase {
+    padding: 120px 0px 120px 0px;
+  }
+  .frase .text-frase {
+    font-size: 45px;
+  }
 }
 @media screen and (min-width: 1400px) {
   .principal {
@@ -257,7 +304,7 @@ form textarea {
     font-size: 65px;
   }
   .principal h6 {
-    font-size: 25px;
+    font-size: 20px;
   }
 
   .conceptos .bi {
