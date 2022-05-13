@@ -25,6 +25,10 @@ body {
   font-weight: 500 !important;
 }
 
+.navbar-toggler {
+  border: 0px !important;
+}
+
 .principal {
   background-image: url(../imagenes/Bolivar1.jpg);
   max-width: 100%;
@@ -50,9 +54,23 @@ body {
   color: white;
   text-transform: uppercase;
 }
+.principal .btn {
+  color: #034e6b;
+  font-weight: 700;
+  margin-top: 40px;
+  width: 200px;
+  background-color: white;
+  border: solid 2px white;
+  border-radius: 30px;
+  letter-spacing: 1px;
+}
+.principal .btn:hover {
+  background-color: #12698b !important;
+  border: solid 2px #12698b !important;
+}
 
 .Subtitulo {
-  color: #034e6b;
+  color: #12698b;
   font-size: 30px;
   margin-bottom: 50px;
   margin-top: 80px;
@@ -61,7 +79,7 @@ body {
 /*---------EXTEND--------*/
 .card .title, .card-2 .title, .card-1 .title {
   font-size: 21px;
-  color: #034e6b;
+  color: #12698b;
 }
 .card .icon, .card-2 .icon, .card-1 .icon {
   font-size: 25px;
@@ -75,26 +93,17 @@ body {
   border-radius: 0px 15px 0px 15px !important;
 }
 
-.principal .btn {
-  margin-top: 40px;
-  width: 200px;
-  background-color: transparent !important;
-  border: solid 2px white;
-  border-radius: 30px;
-  letter-spacing: 1px;
+.conceptos {
+  font-size: 16px;
 }
-.principal .btn:hover {
-  background-color: #034e6b !important;
-  border: solid 2px #034e6b !important;
-}
-
 .conceptos .bi {
-  color: rgb(95, 95, 95);
-  font-size: 35px !important;
+  color: #12698b;
+  font-size: 55px !important;
 }
 .conceptos h6 {
-  font-size: 18px;
+  font-size: 20px;
   letter-spacing: 2px;
+  color: rgb(95, 95, 95);
 }
 
 .frase {
@@ -127,11 +136,15 @@ footer {
   background-color: #12698b;
 }
 footer p {
-  font-size: 18px;
+  font-size: 15px;
 }
 footer a {
   text-decoration: none;
   color: white;
+}
+footer a:hover {
+  color: #034e6b;
+  font-weight: 600;
 }
 footer .contacto .espaciado {
   padding-left: 25px;
@@ -139,12 +152,12 @@ footer .contacto .espaciado {
 
 #scrollUp {
   position: fixed;
-  right: 80px;
+  right: 30px;
   font-size: 20px;
   line-height: 50px;
   width: 50px;
   height: 50px;
-  bottom: 50px;
+  bottom: 30px;
   background-color: #034e6b;
   color: white;
   -webkit-transition-duration: 500ms;
@@ -156,7 +169,7 @@ footer .contacto .espaciado {
 /*-------- MAPS  APLICADO--------*/
 .migadepan {
   margin-top: 150px;
-  margin-left: 20px;
+  margin-left: 10px;
   letter-spacing: 3px;
   font-size: 14px;
   margin-bottom: 50px;
@@ -165,11 +178,11 @@ footer .contacto .espaciado {
 /*---------------END-MAPS---------------*/
 .metodologia {
   font-size: 18px;
-  margin-bottom: 150px;
+  padding-bottom: 150px;
 }
 .metodologia .bi {
   font-size: 35px;
-  color: rgb(95, 95, 95);
+  color: #12698b;
   padding-right: 20px;
 }
 .metodologia span {
@@ -178,10 +191,11 @@ footer .contacto .espaciado {
 
 .servicios {
   padding-bottom: 100px;
+  color: rgb(46, 46, 46);
 }
 .servicios .fa-check {
   padding-right: 10px !important;
-  color: rgb(95, 95, 95);
+  color: #12698b;
 }
 
 .epigrafe {
@@ -195,30 +209,35 @@ form .text-form {
 }
 form input {
   height: 40px;
-  width: 80%;
+  width: 100%;
   padding: 5px 8px;
   display: block;
   justify-content: center;
 }
 form textarea {
   padding: 8px;
-  width: 80%;
+  width: 100%;
   display: block;
   height: 150px;
   justify-content: center;
 }
 
+.contacto h4 {
+  color: #12698b;
+}
+
 .btn-formulario {
-  border: 1px solid #00303a;
+  border: 1px solid #034e6b;
   background-color: transparent;
   padding: 10px;
   width: 150px;
   margin-top: 30px;
   margin-bottom: 80px;
   border-radius: 25px;
+  color: #034e6b;
 }
 .btn-formulario:hover {
-  background-color: #00303a !important;
+  background-color: #034e6b !important;
   color: white;
 }
 
@@ -236,6 +255,7 @@ form textarea {
 @media screen and (min-width: 768px) {
   .metodologia {
     font-size: 21px;
+    padding-bottom: 100px !important;
   }
   .metodologia .bi {
     font-size: 55px;
@@ -243,10 +263,10 @@ form textarea {
 }
 @media screen and (min-width: 1024px) {
   .principal {
+    padding-left: 100px;
     border-radius: 0px 0px 0px 150px;
     padding-top: 150px;
     text-align: left;
-    padding-left: 140px;
   }
   .principal h1 {
     font-size: 50px;
@@ -270,10 +290,6 @@ form textarea {
     width: 130px !important;
   }
 
-  .servicios {
-    margin-bottom: 150px;
-  }
-
   .reseñas {
     border-radius: 0px 150px 0px 0px;
   }
@@ -294,6 +310,11 @@ form textarea {
   }
   .frase .text-frase {
     font-size: 45px;
+  }
+
+  #scrollUp {
+    right: 50px;
+    bottom: 50px;
   }
 }
 @media screen and (min-width: 1400px) {
